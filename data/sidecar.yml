@@ -1,0 +1,14 @@
+server_url: ${GS_SERVER_URL}
+server_api_token: ${GS_SERVER_API_TOKEN}
+node_id: ${GS_NODE_ID}
+node_name: ${GS_NODE_NAME}
+update_interval: ${GS_UPDATE_INTERVAL}
+tls_skip_verify: ${GS_TLS_SKIP_VERIFY}
+send_status: ${GS_SEND_STATUS}
+list_log_files: ${GS_LIST_LOG_FILES}
+cache_path: ${GS_CACHE_PATH}
+collector_configuration_directory: ${GS_COLLECTOR_CONFIGURATION_DIRECTORY}
+log_path: ${GS_LOG_PATH}
+log_rotate_max_file_size: ${GS_LOG_ROTATE_MAX_FILE_SIZE}
+log_rotate_keep_files: ${GS_LOG_ROTATE_KEEP_FILES}
+collector_binaries_whitelist: ${GS_COLLECTOR_BINARIES_WHITELIST}
