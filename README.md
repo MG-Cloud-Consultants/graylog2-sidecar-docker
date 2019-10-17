@@ -1,5 +1,5 @@
 # Graylog Sidecar Docker Image with Filebeat
-A Docker image for the Graylog 3.0 sidecar, using Filebeat for collecting log files
+A Docker image for the [Graylog 3.0 sidecar](https://docs.graylog.org/en/3.1/pages/sidecar.html), using [Filebeat](https://www.elastic.co/products/beats/filebeat) for collecting log files
 
 
 ## Configuration
