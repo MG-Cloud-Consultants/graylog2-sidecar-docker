@@ -1,4 +1,4 @@
-# Graylog Sidecar Docker Image with Filebeat
+# Graylog Sidecar Docker Image with Filebeat  [![Docker Image](https://img.shields.io/docker/pulls/markusgulden/graylog2-sidecar-docker.svg)](https://hub.docker.com/r/markusgulden/graylog2-sidecar-docker)
 A Docker image for the [Graylog 3.0 sidecar](https://docs.graylog.org/en/3.1/pages/sidecar.html), using [Filebeat](https://www.elastic.co/products/beats/filebeat) for collecting log files
 
 
