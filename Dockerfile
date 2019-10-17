@@ -14,8 +14,8 @@ ENV GS_UPDATE_INTERVAL=10 \
     GS_CACHE_PATH="/var/cache/graylog-sidecar" \
     GS_COLLECTOR_CONFIGURATION_DIRECTORY="/var/lib/graylog-sidecar/generated" \
     GS_LOG_PATH="/var/log/graylog-sidecar" \
-	GS_LOG_ROTATE_MAX_FILE_SIZE="10MiB" \
-	GS_LOG_ROTATE_KEEP_FILES=10 \
-	GS_COLLECTOR_BINARIES_WHITELIST="["/usr/bin/filebeat", "/usr/bin/packetbeat", "/usr/bin/metricbeat", "/usr/bin/heartbeat", "/usr/bin/auditbeat", "/usr/bin/journalbeat", "/usr/share/filebeat/bin/filebeat", "/usr/share/packetbeat/bin/packetbeat", "/usr/share/metricbeat/bin/metricbeat", "/usr/share/heartbeat/bin/heartbeat", "/usr/share/auditbeat/bin/auditbeat", "/usr/share/journalbeat/bin/journalbeat", "/usr/bin/nxlog", "/opt/nxlog/bin/nxlog"]"
+    GS_LOG_ROTATE_MAX_FILE_SIZE="10MiB" \
+    GS_LOG_ROTATE_KEEP_FILES=10 \
+    GS_COLLECTOR_BINARIES_WHITELIST="["/usr/bin/filebeat", "/usr/bin/packetbeat", "/usr/bin/metricbeat", "/usr/bin/heartbeat", "/usr/bin/auditbeat", "/usr/bin/journalbeat", "/usr/share/filebeat/bin/filebeat", "/usr/share/packetbeat/bin/packetbeat", "/usr/share/metricbeat/bin/metricbeat", "/usr/share/heartbeat/bin/heartbeat", "/usr/share/auditbeat/bin/auditbeat", "/usr/share/journalbeat/bin/journalbeat", "/usr/bin/nxlog", "/opt/nxlog/bin/nxlog"]"
 ADD ./data /data
 CMD /usr/bin/graylog-sidecar -c /data/sidecar.yml
