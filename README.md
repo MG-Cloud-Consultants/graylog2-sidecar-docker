@@ -64,10 +64,10 @@ services:
   graylog-sidecar:
     image: markusgulden/graylog2-sidecar-docker
     environment:
-        -  GS_SERVER_URL=http://localhost:9000/api/
-        -  GS_NODE_ID=a-unique-id
-        -  GS_SERVER_API_TOKEN=mv52k4jo5qvgto6o35ep5rgrhfp3jnq20hlpkrbk6blhporuqj6
-          GS_LIST_LOG_FILES=/var/log/some-folder
+      - GS_SERVER_URL=http://localhost:9000/api/
+      - GS_NODE_ID=a-unique-id
+      - GS_SERVER_API_TOKEN=mv52k4jo5qvgto6o35ep5rgrhfp3jnq20hlpkrbk6blhporuqj6
+      - GS_LIST_LOG_FILES=/var/log/some-folder
     volumes:
-        -  /c/tmp/docker-fs/applications:/var/log/some-folder
+      - /c/tmp/docker-fs/applications:/var/log/some-folder:ro
 ```
