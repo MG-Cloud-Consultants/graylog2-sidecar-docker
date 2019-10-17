@@ -1,5 +1,5 @@
-# Graylog Sidecar Docker Image with Filebeat
-A Docker image for the Graylog 3.0 sidecar, using Filebeat for collecting log files
+# Graylog Sidecar Docker Image with Filebeat  [![Docker Image](https://img.shields.io/docker/pulls/markusgulden/graylog2-sidecar-docker.svg)](https://hub.docker.com/r/markusgulden/graylog2-sidecar-docker)
+A Docker image for the [Graylog 3.0 sidecar](https://docs.graylog.org/en/3.1/pages/sidecar.html), using [Filebeat](https://www.elastic.co/products/beats/filebeat) for collecting log files
 
 
 ## Configuration
@@ -64,10 +64,10 @@ services:
   graylog-sidecar:
     image: markusgulden/graylog2-sidecar-docker
     environment:
-        -  GS_SERVER_URL=http://localhost:9000/api/
-        -  GS_NODE_ID=a-unique-id
-        -  GS_SERVER_API_TOKEN=mv52k4jo5qvgto6o35ep5rgrhfp3jnq20hlpkrbk6blhporuqj6
-          GS_LIST_LOG_FILES=/var/log/some-folder
+      - GS_SERVER_URL=http://localhost:9000/api/
+      - GS_NODE_ID=a-unique-id
+      - GS_SERVER_API_TOKEN=mv52k4jo5qvgto6o35ep5rgrhfp3jnq20hlpkrbk6blhporuqj6
+      - GS_LIST_LOG_FILES=/var/log/some-folder
     volumes:
-        -  /c/tmp/docker-fs/applications:/var/log/some-folder
+      - /c/tmp/docker-fs/applications:/var/log/some-folder:ro
 ```
